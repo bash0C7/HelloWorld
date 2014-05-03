@@ -14,8 +14,10 @@
 
 @implementation ViewController
 
+@synthesize label;
 - (void)viewDidLoad
 {
+    [self setLabel:nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -26,4 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pushButton:(id)sender {
+   //label.text = @"hello world";
+}
 @end
